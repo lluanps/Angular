@@ -1,1 +1,15 @@
-<p>data-binding works!</p>
+<section class="property-binding">
+
+    <article>
+        <h3>Interpolação</h3>
+        <!--{{ aqui dentro é colocado a variavel que foi inserida no component dentro do 'export class DataBindingComponent...' }}-->
+        <p>String renderizada com Interpolação: {{ url }}</p>
+        <!--pode tbm realizar contas-->
+        <p>Resultado de 1 + 1 = {{ 1 + 1 }}</p>
+        <!--interpolation usando uma funcao criada dentro do componente-->
+        <p>Resultado de 1 + 1 não é {{ 1 + 1 + getValor()}}</p>
+        <!--expressoes logicas na interpolação-->
+        <p>Curso de angular e gosto do curso: {{ cursoAngular && getCurtirCurso() }}</p>
+    </article>
+
+</section>
